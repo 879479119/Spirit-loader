@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-    "cover": "istanbul cover --hook-run-in-content node_modules/mocha/bin/_mocha",
+    "cover": "node_modules/.bin/istanbul cover --hook-run-in-content node_modules/mocha/bin/_mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
@@ -26,7 +26,7 @@
   "devDependencies": {
     "codecov": "^2.0.2",
     "coveralls": "^2.12.0",
-    "istanbul": "^0.4.0",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^3.2.0",
     "should": "^11.2.1"
   }
