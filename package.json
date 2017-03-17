@@ -1,0 +1,33 @@
+{
+  "name": "spirit-loader",
+  "version": "0.0.1",
+  "description": "A webpack plugin for spirit images, this must be a long way to go...",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover --hook-run-in-content node_modules/mocha/bin/_mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/879479119/Spirit-loader.git"
+  },
+  "keywords": [
+    "loader",
+    "spirit",
+    "image"
+  ],
+  "author": "rocksama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/879479119/Spirit-loader/issues"
+  },
+  "homepage": "https://github.com/879479119/Spirit-loader#readme",
+  "devDependencies": {
+    "codecov": "^2.0.2",
+    "coveralls": "^2.12.0",
+    "istanbul": "^0.4.0",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  }
+}
