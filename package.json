@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha",
-    "coveralls": "npm run upload -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "upload": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha/ --verbose",
-    "s": "cat ./coverage/lcov.info | coveralls"
+    "cover": "node ./lib/istanbul-modified/lib/cli.js cover ./node_modules/mocha/bin/_mocha/ --verbose && npm run codecov",
+    "codecov": "codecov --token=7304960e-5520-49a9-9a42-a6076180f6c6"
   },
   "repository": {
     "type": "git",
